@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe_v0_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The winner will go here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwG-uA-FxH">
+                                <rect key="frame" x="40" y="89" width="241" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZf-v5-807">
+                                <rect key="frame" x="40" y="166" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NKD-Fj-cnr">
+                                <rect key="frame" x="123" y="166" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TxS-Fk-bZX">
+                                <rect key="frame" x="206" y="166" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NbK-dw-qbv">
+                                <rect key="frame" x="123" y="332" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="msx-mx-To9">
+                                <rect key="frame" x="40" y="332" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DAu-Zt-VJD">
+                                <rect key="frame" x="40" y="249" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Mo-Av-oRN">
+                                <rect key="frame" x="123" y="249" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZr-LZ-JpA">
+                                <rect key="frame" x="206" y="332" width="75" height="75"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XU-Ji-9Ol">
+                                <rect key="frame" x="206" y="249" width="75" height="75"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxN-Zf-TdK">
+                                <rect key="frame" x="120" y="457" width="81" height="30"/>
+                                <state key="normal" title="Reset game"/>
+                                <connections>
+                                    <action selector="doResetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bpt-pq-fRd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nvm-wH-jlv" appends="YES" id="9HX-bS-CkZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imgSqr1" destination="UZf-v5-807" id="0Ab-Pm-SLN"/>
+                        <outlet property="imgSqr2" destination="NKD-Fj-cnr" id="tac-DC-rhY"/>
+                        <outlet property="imgSqr3" destination="TxS-Fk-bZX" id="q6M-C2-Ifo"/>
+                        <outlet property="imgSqr4" destination="DAu-Zt-VJD" id="2Wz-Fx-8oK"/>
+                        <outlet property="imgSqr5" destination="6Mo-Av-oRN" id="T90-nK-O2a"/>
+                        <outlet property="imgSqr6" destination="2XU-Ji-9Ol" id="lw5-tu-UNl"/>
+                        <outlet property="imgSqr7" destination="msx-mx-To9" id="wNg-HL-Vcj"/>
+                        <outlet property="imgSqr8" destination="NbK-dw-qbv" id="auP-42-zmC"/>
+                        <outlet property="imgSqr9" destination="iZr-LZ-JpA" id="64j-FH-6Qb"/>
+                        <outlet property="lbOutcome" destination="MwG-uA-FxH" id="j2g-cM-7C7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nvm-wH-jlv">
+                    <connections>
+                        <action selector="didTap:" destination="BYZ-38-t0r" id="ZQF-Mj-Uqj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="205" y="386"/>
+        </scene>
+    </scenes>
+</document>
